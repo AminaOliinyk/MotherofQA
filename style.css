@@ -1,0 +1,35 @@
+body {
+  background-image: url('images/preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* горизонтальне центрування */
+  align-items: center;       /* вертикальне центрування */
+  font-family: Arial, sans-serif;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* затемнення для читабельності */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}

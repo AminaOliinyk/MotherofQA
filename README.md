@@ -1,12 +1,8 @@
-# Назва проєкту
+# Mother of QA
 
-Короткий опис, що це за проєкт і що він робить.
+Hello world!
+I'm Amina and this is my personal site!
 
-## Як запустити
+## Author
 
-1. Встановити залежності
-2. Запустити команду `npm start`
-
-## Автор
-
-Amina Oliinyk
+Amina Kryvoshyya
