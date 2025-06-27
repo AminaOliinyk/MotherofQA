@@ -26,7 +26,19 @@ html, body {
   background-image: url('images/preview.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh; /* щоби було видно */
+  background-repeat: no-repeat;
+
+  height: 100vh; /* Щоб блок точно був великим і фон був видно */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 
 
