@@ -23,7 +23,7 @@ html, body {
 
 /* Backgrounds */
 #about {
-  background-image: url('../images/file.jpg	');
+  background-image: url('./images/preview.jpg');
 }
 
 #achievements {
