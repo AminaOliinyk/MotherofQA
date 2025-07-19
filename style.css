@@ -74,41 +74,42 @@ body, html {
 /* Друга секція (експертиза) */
 #expertise {
   background-color: #ffd1dc;
-  color:#5C3317; 
+  color: #5C3317;
+  padding: 80px 20px 60px;
   text-align: center;
-  padding: 60px 20px;
 }
 
 #expertise h2 {
-  font-size: 3rem; 
-  margin-bottom: 40px;
+  font-size: 3.5rem;
   font-weight: bold;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .about-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  max-width: 1000px;
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.about-item i {
-  width: 80px;
-  height: 80px;
-  background-color: rgba(0, 170, 255, 0.2); 
-  color: #5C3317; 
-  font-size: 36px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 15px auto; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.about-item {
+  width: 220px;
+  text-align: center;
 }
 
+.about-item i {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background: radial-gradient(circle at center, #ffffff 30%, rgba(0, 170, 255, 0.2));
+  color: #5C3317;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+
+}
 
 /* Третя секція (сертифікації) */
 #certifications {
@@ -158,97 +159,128 @@ body, html {
 /* Четверта секція (послуги) */
 #services {
   background-color: #ffd1dc;
-  color: #5C3317;
-  text-align: center;
+  color: #5C3317; 
   padding: 60px 20px;
-
 }
 
 #services h2 {
-  font-size: 3rem;
+  font-size: 3rem; 
   margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
 }
 
-#services ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  max-width: 1000px;
-}
-
-#services ul li {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 1.2rem;
-  color: #5C3317;
+.services-container {
   display: flex;
+  gap: 40px;
   justify-content: center;
-  align-items: center;
-  min-height: 100px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  box-sizing: border-box;
+  flex-wrap: wrap;
 }
+
+.services-column {
+  flex: 1 1 300px;
+}
+
+.services-column h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #5C3317;
+  border-bottom: 2px solid #5C3317;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.service-item {
+  background-color: #fff0f5;
+  border: 1px solid #5C3317;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  flex: 1 1 calc(50% - 10px); /* 2 в ряд */
+  height: 120px; /* фіксована висота */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
+
+
 
 /* Остання секція (контакти)*/
 #contacts {
-  background-color: ivory;
-  color: #333;
-}
-
-#contacts {
-  background-color: ivory;
+   background-color: ivory;
   color: #5C3317; 
-  text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 #contacts h2 {
-  font-size: 36px;
-  color:#5C3317; 
-  margin-bottom: 50px;
+  font-size: 3rem; 
+  color: #5C3317; 
+  margin-bottom: 110px;
 }
 
 .social-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 40px;
-  justify-items: center;
-  align-items: center;
-  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.social-grid .social-item:nth-child(4),
-.social-grid .social-item:nth-child(5) {
-  grid-column: span 3;
+.social-item {
+  background-color: transparent;
+  border: 1.5px solid #5C3317;
+  border-radius: 12px;
+  width: 180px;
+  height: 180px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+   text-decoration: none; 
 }
 
 .social-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
-  color: #5C3317; 
   text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.social-item a:hover {
-  transform: scale(1.1);
+  color: #5C3317;
+  gap: 14px;
+   text-decoration: none; 
 }
 
 .social-item i {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 90px;
+   text-decoration: none; 
 }
 
+.social-item span {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+   text-decoration: none; 
+}
+
+
+
+
+
+/* Вирівнювання посилань */
 a {
   color: #5C3317; 
   margin: 0 10px;
@@ -259,5 +291,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 }
